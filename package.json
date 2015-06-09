@@ -1,0 +1,52 @@
+{
+  "name": "jquery-masked-input",
+  "title": "jQuery Masked Input Plugin",
+  "description": "Masked Input plugin",
+  "version": "0.1.2",
+  "homepage": "https://github.com/mcdpartners/masked-input",
+  "company": "MCD Partners",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcdpartners/masked-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcdpartners/masked-input/issues"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js --log-level debug --single-run false"
+  },
+  "files": ["dist/jquery.masked-input.js"],
+  "main": "dist/jquery.masked-input.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-casperjs": "^2.1.0",
+    "grunt-contrib-compress": "0.7.0",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "0.4.0",
+    "grunt-contrib-watch": "0.6.0",
+    "grunt-jscs": "^1.5.0",
+    "grunt-karma": "^0.10.1",
+    "grunt-text-replace": "0.3.11",
+    "grunt-version": "^1.0.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4"
+  },
+  "keywords": [
+    "forms",
+    "masked",
+    "input",
+    "ada",
+    "wcag",
+    "accessibility"
+  ]
+}

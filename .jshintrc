@@ -1,0 +1,13 @@
+{
+  "node": true,
+  "jquery": true,
+  "browser": true,
+
+  "globals": {
+    "console": true,
+    "ValidationTypes": true,
+    "Validator": true,
+    "ValidationRule": true,
+    "validations": true
+  }
+}
