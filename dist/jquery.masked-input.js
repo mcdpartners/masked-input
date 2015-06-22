@@ -1,5 +1,5 @@
 /*!
- * jQuery Masked Input Plugin v0.1.2
+ * jQuery Masked Input Plugin v0.1.3
  *
  * Copyright (c) 2015 MCD Partners
  * Released under the MIT license
@@ -54,7 +54,7 @@
     }
   };
 
-  MaskedInput.VERSION = '0.1.2';
+  MaskedInput.VERSION = '0.1.3';
 
   MaskedInput.prototype.peekNextToken = function(offset) {
     var len = (this.$element.val() || '').length;
@@ -167,7 +167,7 @@
         }
         return this.checkKeyAgainstNextToken(keyCode, shiftKey, 1);
       case '*':
-        return ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105) || (keyCode >= 65 && keyCode <= 90));
+        return ((shiftKey || keyCode < 48 || keyCode > 57) && (keyCode < 96 || keyCode > 105) && (keyCode < 65 || keyCode > 90));
       default:
         return true;
     }
